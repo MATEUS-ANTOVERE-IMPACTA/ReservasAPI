@@ -45,14 +45,10 @@ Visualização completa de todas as reservas registradas no sistema.
 
 Clone o repositório:
 
-```bash
 git clone https://github.com/MATEUS-ANTOVERE-IMPACTA/ReservasAPI
 cd ReservasAPI
 Execute via Docker Compose:
 
-bash
-Copiar
-Editar
 docker-compose up --build
 🌐 Acesse a aplicação
 Swagger UI: http://localhost:5001/apidocs
@@ -60,9 +56,7 @@ Swagger UI: http://localhost:5001/apidocs
 API: http://localhost:5001
 
 📂 Estrutura do Projeto
-arduino
-Copiar
-Editar
+
 ReservasAPI/
 ├── app/
 │   ├── controllers/
