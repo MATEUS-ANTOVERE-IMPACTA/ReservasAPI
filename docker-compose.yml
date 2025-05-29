@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   reservas:
     build: .
@@ -6,4 +7,3 @@ services:
       - "5001:5001"
     volumes:
       - .:/app
-    command: python app/app.py
