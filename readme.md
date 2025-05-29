@@ -1,57 +1,68 @@
-# 🗓️ ReservasAPI - Sistema de Gerenciamento de Reservas de Salas
+📅 ReservasAPI - Sistema de Gerenciamento de Reservas de Salas
 
-A **ReservasAPI** é um microsserviço RESTful em **Python com Flask**, responsável por registrar as **reservas de salas feitas por turmas**. A aplicação segue o padrão **MVC**, utiliza **SQLite**, e está integrada à documentação **Swagger** para facilitar testes e visualização de endpoints.
+O ReservasAPI é um microsserviço RESTful desenvolvido em Python com Flask, especializado em registrar e gerenciar reservas de salas realizadas por turmas. Segue o padrão arquitetural MVC, utiliza banco de dados SQLite, e está integrado com Swagger UI para documentação interativa e testes simplificados.
 
----
+🚀 Funcionalidades
 
-## 🚀 Funcionalidades
+📌 Cadastro de Reservas
 
-- 📝 **Cadastro de Reservas**
-  - Cada reserva inclui: nome do aluno, turma, sala, horário e data da reserva.
-  - Validações básicas de integridade (ex: campo obrigatório).
+Cada reserva inclui:
 
-- 📄 **Listagem de Reservas**
-  - Exibe todas as reservas registradas no banco de dados.
+Nome do aluno
 
-- 🧾 **Swagger UI**
-  - Interface visual para explorar e testar as rotas.
-  - Disponível em: [`/apidocs`](http://localhost:5001/apidocs)
+Turma
 
----
+Sala
 
-## 🛠️ Tecnologias Utilizadas
+Horário
 
-- Python 3.11
-- Flask 3.0.2
-- Flask-SQLAlchemy
-- Flasgger (Swagger UI)
-- SQLite
-- Docker & Docker Compose
+Data da reserva
 
----
+Validações essenciais para garantir integridade dos dados (ex: campos obrigatórios).
 
-## 🐳 Como Rodar com Docker
+📄 Listagem de Reservas
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/MATEUS-ANTOVERE-IMPACTA/ReservasAPI
-   cd ReservasAPI
-Execute via Docker:
+Visualização completa de todas as reservas registradas no sistema.
 
-bash
-Copiar
-Editar
+🧾 Documentação com Swagger UI
+
+Interface gráfica para testar e visualizar rotas.
+
+Disponível em: http://localhost:5001/apidocs
+
+🛠️ Tecnologias Utilizadas
+
+Python 3.11
+
+Flask 3.0.2
+
+Flask-SQLAlchemy
+
+Flasgger (Swagger UI)
+
+SQLite
+
+Docker & Docker Compose
+
+🐳 Como Rodar com Docker
+
+Clone o repositório:
+
+git clone https://github.com/MATEUS-ANTOVERE-IMPACTA/ReservasAPI
+cd ReservasAPI
+
+Execute via Docker Compose:
+
 docker-compose up --build
-Acesse:
+
+🌐 Acesse a aplicação
 
 Swagger UI: http://localhost:5001/apidocs
 
 API: http://localhost:5001
 
 📂 Estrutura do Projeto
-arduino
-Copiar
-Editar
+
 ReservasAPI/
 ├── app/
 │   ├── controllers/
@@ -65,12 +76,17 @@ ReservasAPI/
 ├── requirements.txt
 ├── Dockerfile
 └── docker-compose.yml
+
 📡 Endpoints Principais
-POST /reservas – Criar uma nova reserva
 
-GET /reservas – Listar todas as reservas
+POST /reservas – Criar nova reserva.
 
-👨‍💻 Desenvolvido por
-👤 Mateus Antovere Silva Rosário | RA: 2401764
-👤 Leandro Ferreira Cassemiro Rosa | RA: 2302060
-👤 Gabriel Quaglio Monteiro Praça | RA: 2400738
+GET /reservas – Listar todas as reservas.
+
+👨‍💻 Equipe de Desenvolvimento
+
+Mateus Antovere Silva Rosário | RA: 2401764
+
+Leandro Ferreira Cassemiro Rosa | RA: 2302060
+
+Gabriel Quaglio Monteiro Praça | RA: 2400738
