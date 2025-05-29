@@ -1,1 +1,89 @@
-📅 ReservasAPI - Sistema de Gerenciamento de Reservas de Salas\n\nO ReservasAPI é um microsserviço RESTful desenvolvido em Python com Flask, especializado em registrar e gerenciar reservas de salas realizadas por turmas.\n\nSegue o padrão arquitetural MVC, utiliza banco de dados SQLite, e está integrado com Swagger UI para documentação interativa e testes simplificados.\n\n---\n\n## 🚀 Funcionalidades\n\n### 📌 Cadastro de Reservas\n\nCada reserva inclui:\n- Nome do aluno\n- Turma\n- Sala\n- Horário\n- Data da reserva\n\nValidações essenciais para garantir integridade dos dados (ex: campos obrigatórios).\n\n### 📄 Listagem de Reservas\n\nVisualização completa de todas as reservas registradas no sistema.\n\n### 🧾 Documentação com Swagger UI\n\n- Interface gráfica para testar e visualizar rotas.\n- Disponível em: http://localhost:5001/apidocs\n\n---\n\n## 🛠️ Tecnologias Utilizadas\n\n- Python 3.11\n- Flask 3.0.2\n- Flask-SQLAlchemy\n- Flasgger (Swagger UI)\n- SQLite\n- Docker & Docker Compose\n\n---\n\n## 🐳 Como Rodar com Docker\n\nClone o repositório:\n\nbash\ngit clone https://github.com/MATEUS-ANTOVERE-IMPACTA/ReservasAPI\ncd ReservasAPI\n\n\nExecute via Docker Compose:\n\nbash\ndocker-compose up --build\n\n\n### 🌐 Acesse a aplicação\n\n- Swagger UI: http://localhost:5001/apidocs\n- API: http://localhost:5001\n\n---\n\n## 📂 Estrutura do Projeto\n\n\nReservasAPI/\n├── app/\n│   ├── controllers/\n│   │   └── reserva_controller.py\n│   ├── models/\n│   │   └── reserva.py\n│   ├── __init__.py\n│   └── app.py\n├── config.py\n├── extensions.py\n├── requirements.txt\n├── Dockerfile\n└── docker-compose.yml\n\n\n---\n\n## 📡 Endpoints Principais\n\n- POST /reservas – Criar nova reserva.\n- GET /reservas – Listar todas as reservas.\n\n---\n\n## 👨‍💻 Equipe de Desenvolvimento\n\n- Mateus Antovere Silva Rosário | RA: 2401764\n- Leandro Ferreira Cassemiro Rosa | RA: 2302060\n- Gabriel Quaglio Monteiro Praça | RA: 2400738
+# 📅 ReservasAPI - Sistema de Gerenciamento de Reservas de Salas
+
+O **ReservasAPI** é um microsserviço RESTful desenvolvido em **Python com Flask**, especializado em registrar e gerenciar reservas de salas realizadas por turmas.
+
+Segue o padrão arquitetural **MVC**, utiliza banco de dados **SQLite**, e está integrado com **Swagger UI** para documentação interativa e testes simplificados.
+
+---
+
+## 🚀 Funcionalidades
+
+### 📌 Cadastro de Reservas
+Cada reserva inclui:
+
+- Nome do aluno
+- Turma
+- Sala
+- Horário
+- Data da reserva
+
+Validações essenciais para garantir integridade dos dados (ex: campos obrigatórios).
+
+### 📄 Listagem de Reservas
+
+Visualização completa de todas as reservas registradas no sistema.
+
+### 🧾 Documentação com Swagger UI
+
+- Interface gráfica para testar e visualizar rotas.
+- Disponível em: [http://localhost:5001/apidocs](http://localhost:5001/apidocs)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python 3.11**
+- **Flask 3.0.2**
+- **Flask-SQLAlchemy**
+- **Flasgger (Swagger UI)**
+- **SQLite**
+- **Docker & Docker Compose**
+
+---
+
+## 🐳 Como Rodar com Docker
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/MATEUS-ANTOVERE-IMPACTA/ReservasAPI
+cd ReservasAPI
+Execute via Docker Compose:
+
+bash
+Copiar
+Editar
+docker-compose up --build
+🌐 Acesse a aplicação
+Swagger UI: http://localhost:5001/apidocs
+
+API: http://localhost:5001
+
+📂 Estrutura do Projeto
+arduino
+Copiar
+Editar
+ReservasAPI/
+├── app/
+│   ├── controllers/
+│   │   └── reserva_controller.py
+│   ├── models/
+│   │   └── reserva.py
+│   ├── __init__.py
+│   └── app.py
+├── config.py
+├── extensions.py
+├── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
+📡 Endpoints Principais
+POST /reservas – Criar nova reserva.
+
+GET /reservas – Listar todas as reservas.
+
+👨‍💻 Equipe de Desenvolvimento
+Mateus Antovere Silva Rosário | RA: 2401764
+
+Leandro Ferreira Cassemiro Rosa | RA: 2302060
+
+Gabriel Quaglio Monteiro Praça | RA: 2400738
